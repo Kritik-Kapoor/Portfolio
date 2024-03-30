@@ -12,7 +12,7 @@ const Navbar = () => {
         <a href="#" className="hover:text-sky-200">
           Projects
         </a>
-        <button className="px-3 py-1.5 bg-[#ccf381] rounded-md">Contact</button>
+        {/* <button className="px-3 py-1.5 bg-[#ccf381] rounded-md">Contact</button> */}
       </div>
     </nav>
   );
