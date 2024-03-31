@@ -1,8 +1,12 @@
 import WorkComponent from "./WorkComponent";
+import TechStack from "./TechStack";
 
 const About = () => {
   return (
-    <section className="container mx-auto grid gap-8 py-10" id="About">
+    <section
+      className="container mx-auto grid gap-8 min-h-[90vh] pt-10 pb-16"
+      id="About"
+    >
       <WorkComponent
         title="Experience"
         text="In my 1 year of experience, I've built products for companies and
@@ -28,6 +32,7 @@ const About = () => {
         deliver fast, resilient solutions optimized for scale — performance
         and scalabilty are priorities on my radar."
       />
+      <TechStack />
     </section>
   );
 };

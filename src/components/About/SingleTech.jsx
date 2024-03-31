@@ -2,7 +2,7 @@ const SingleTech = ({ icon, title }) => {
   return (
     <div className="text-center">
       {icon}
-      <span>{title}</span>
+      <span className="font-medium mt-1.5">{title}</span>
     </div>
   );
 };
