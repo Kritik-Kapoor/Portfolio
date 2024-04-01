@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "PitchHere",
-      "description": "PitchHere is an investment platform that provides a one-stop for all startup needs. PitchHere provides a comprehensive suite of services for startups, including access to investors, mentorship programs, and various support services to help them thrive",
+      "description": "PitchHere is an investment platform that provides a one-stop for all startup needs. PitchHere provides a comprehensive suite of services for startups, including access to investors, mentorship programs, and various support services to help them thrive. With PitchHere, startups have a strong foundation to launch, scale, and become the next big success story.",
       "languages": [
         "React",
         "NodeJs",
@@ -12,21 +12,36 @@
         "Tailwind"
       ],
       "img": "/src/assets/PitchHere.png",
-      "url": "https://pitchhere.in/"
+      "url": "https://pitchhere.in/",
+      "features": [
+        "Created Startup, Mentor, Investor, Vendor and Admin panel with each having its own dashboard.",
+        "A complete wallet system with a subscription modal for users to buy credits",
+        "Integrated Stripe payment gateway.",
+        "Integrated socket.io for live chat between users.",
+        "Integrated webRTC for video call between users.",
+        "Implemented Redux-persist to store data in local storage."
+      ]
     },
     {
       "title": "userq.net",
-      "description": "This E-commerce platform specializes in the sale of Snapchat and Instagram accounts. Originally developed for an international client, the website boasts a comprehensive admin portal. Through this portal, administrators have full control",
-      "languages": ["Php", "SQL", "jQuery", "HTML", "Bootstrap5"],
+      "description": "This E-commerce platform specializes in the sale of Snapchat and Instagram accounts. Originally developed for an international client, the website boasts a comprehensive admin portal. Through this portal, administrators have full control over categories, products, and discounts, ensuring a seamless and tailored shopping experience for customers.",
+      "languages": ["Php", "JavaScript", "SQL", "jQuery", "HTML", "Bootstrap5"],
       "img": "/src/assets/userq.png",
-      "url": "https://userq.net/"
+      "url": "https://userq.net/",
+      "features": [
+        "Integrated Paypal and Sadad payment gateway.",
+        "Integrated Twilo for sending sms.",
+        "Complete admin panel with ability to control categories, products and discount.",
+        "Responsive UI."
+      ]
     },
     {
       "title": "EcoExcellence",
-      "description": "EcoExcellence is an online platform dedicated to promoting sustainable living and eco-friendly products in Australia. Designed to cater to the needs of environmentally conscious consumers, EcoExcellence offers a wide range of products",
+      "description": "EcoExcellence is an online platform dedicated to promoting sustainable living and eco-friendly products in Australia. Designed to cater to the needs of environmentally conscious consumers, EcoExcellence offers a wide range of products that are sourced and manufactured with sustainability in mind From houseehold items to personal care products, each item on EcoExcellence is carefully curated to meet the highest standards of eco-friendliness. The platform also features a user-friendly interface, making it easy for customers to find and purchase products that align with their values.",
       "languages": ["Php", "HTML", "Bootstrap5"],
       "img": "/src/assets/EcoExcellence.png",
-      "url": "https://ecoexcellence.com.au/"
+      "url": "https://ecoexcellence.com.au/",
+      "features": ["Seamless Responsive UI.", "Contact Form"]
     }
   ]
 }
