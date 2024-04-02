@@ -9,7 +9,7 @@ const ProjectCard = ({ data }) => {
   return (
     <div className="project-card">
       <img
-        src={img}
+        src={img[0].image}
         alt={`${title} screenshot`}
         className="h-[250px] rounded"
       />

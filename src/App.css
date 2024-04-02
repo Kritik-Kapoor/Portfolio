@@ -23,3 +23,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+nav {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+}

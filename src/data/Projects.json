@@ -11,7 +11,12 @@
         "Redux",
         "Tailwind"
       ],
-      "img": "/src/assets/PitchHere.png",
+      "img": [
+        { "id": 1, "image": "/src/assets/PitchHere.png" },
+        { "id": 2, "image": "/src/assets/PitchHere2.png" },
+        { "id": 3, "image": "/src/assets/PitchHere3.png" },
+        { "id": 4, "image": "/src/assets/PitchHere4.png" }
+      ],
       "url": "https://pitchhere.in/",
       "features": [
         "Created Startup, Mentor, Investor, Vendor and Admin panel with each having its own dashboard.",
@@ -26,7 +31,12 @@
       "title": "userq.net",
       "description": "This E-commerce platform specializes in the sale of Snapchat and Instagram accounts. Originally developed for an international client, the website boasts a comprehensive admin portal. Through this portal, administrators have full control over categories, products, and discounts, ensuring a seamless and tailored shopping experience for customers.",
       "languages": ["Php", "JavaScript", "SQL", "jQuery", "HTML", "Bootstrap5"],
-      "img": "/src/assets/userq.png",
+      "img": [
+        { "id": 1, "image": "/src/assets/userq.png" },
+        { "id": 2, "image": "/src/assets/userq2.png" },
+        { "id": 3, "image": "/src/assets/userq3.png" },
+        { "id": 4, "image": "/src/assets/userq4.png" }
+      ],
       "url": "https://userq.net/",
       "features": [
         "Integrated Paypal and Sadad payment gateway.",
@@ -39,7 +49,12 @@
       "title": "EcoExcellence",
       "description": "EcoExcellence is an online platform dedicated to promoting sustainable living and eco-friendly products in Australia. Designed to cater to the needs of environmentally conscious consumers, EcoExcellence offers a wide range of products that are sourced and manufactured with sustainability in mind From houseehold items to personal care products, each item on EcoExcellence is carefully curated to meet the highest standards of eco-friendliness. The platform also features a user-friendly interface, making it easy for customers to find and purchase products that align with their values.",
       "languages": ["Php", "HTML", "Bootstrap5"],
-      "img": "/src/assets/EcoExcellence.png",
+      "img": [
+        { "id": 1, "image": "/src/assets/EcoExcellence.png" },
+        { "id": 2, "image": "/src/assets/EcoExcellence2.png" },
+        { "id": 3, "image": "/src/assets/EcoExcellence3.png" },
+        { "id": 4, "image": "/src/assets/EcoExcellence4.png" }
+      ],
       "url": "https://ecoexcellence.com.au/",
       "features": ["Seamless Responsive UI.", "Contact Form"]
     }

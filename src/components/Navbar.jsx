@@ -1,6 +1,12 @@
-const Navbar = () => {
+const Navbar = ({ isScrolled, scrollPos }) => {
   return (
-    <nav className="container flex items-center justify-between mx-auto py-5">
+    <nav
+      className={`container-fluid ${
+        isScrolled ? "bg-white text-black" : "bg-transparent text-white"
+      } ${
+        isScrolled || scrollPos === 0 ? "visible" : "hidden"
+      } transition-all duration-300 ease-in-out`}
+    >
       <h2 className="font-medium text-3xl text-[#ccf381]">Kritik Kapoor</h2>
       <div className="w-4/12 flex items-center justify-between text-lg font-medium">
         <a href="#Home" className="hover:text-[#8258bf]">

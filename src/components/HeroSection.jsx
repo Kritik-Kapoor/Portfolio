@@ -3,7 +3,7 @@ import { LinkedInIcon, MailIcon, GitHubIcon, DownArrowIcon } from "../Icons";
 
 const HeroSection = () => {
   return (
-    <section id="Home" className="min-h-[90vh] text-center">
+    <section id="Home" className="min-h-screen text-center pt-[100px]">
       <div className="container flex items-center justify-around mx-auto text-left">
         <div>
           <h1 className="text-6xl text-[#ccf381]">

@@ -1,10 +1,13 @@
+import { useState } from "react";
 import "./modal.css";
 
 const Modal = ({ open, onClose, data }) => {
+  const [selectedImg, setSelectedImg] = useState(1);
+
   if (!open) {
-    return;
+    return null;
   }
-  console.log(data);
+
   return (
     <div
       className={`overlay ${open ? "visible" : "invisible"}`}
@@ -27,30 +30,22 @@ const Modal = ({ open, onClose, data }) => {
         </div>
         <div>
           <img
-            src={data.img}
+            src={data.img[selectedImg - 1].image}
             alt="highligted image"
             width="92%"
             className="rounded"
           />
           <div className="flex items-center gap-2 my-2">
-            <img
-              src={data.img}
-              alt="highligted image"
-              width="30%"
-              className="rounded"
-            />
-            <img
-              src={data.img}
-              alt="highligted image"
-              width="30%"
-              className="rounded"
-            />
-            <img
-              src={data.img}
-              alt="highligted image"
-              width="30%"
-              className="rounded"
-            />
+            {data.img
+              .filter((img) => img.id !== selectedImg)
+              .map((image) => (
+                <div
+                  key={image.id}
+                  className="other-images"
+                  style={{ backgroundImage: `url(${image.image})` }}
+                  onClick={() => setSelectedImg(image.id)}
+                ></div>
+              ))}
           </div>
         </div>
         <div>
