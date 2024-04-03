@@ -14,11 +14,13 @@ const Modal = ({ open, onClose, data }) => {
       onClick={onClose}
     >
       <div
-        className="modal-container grid grid-cols-2"
+        className="modal-container grid lg:grid-cols-2"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="col-span-2 flex items-center justify-between mb-2">
-          <h4 className="col-span-2 text-2xl font-medium mb-3">{data.title}</h4>
+        <div className="lg:col-span-2 flex items-center justify-between mb-2">
+          <h4 className="lg:col-span-2 text-2xl font-medium mb-3">
+            {data.title}
+          </h4>
           <a
             href={data.url}
             target="_blank"
@@ -33,9 +35,9 @@ const Modal = ({ open, onClose, data }) => {
             src={data.img[selectedImg - 1].image}
             alt="highligted image"
             width="92%"
-            className="rounded"
+            className="rounded mx-auto md:m-0"
           />
-          <div className="flex items-center gap-2 my-2">
+          <div className="flex items-center justify-center md:justify-start gap-2 my-2">
             {data.img
               .filter((img) => img.id !== selectedImg)
               .map((image) => (

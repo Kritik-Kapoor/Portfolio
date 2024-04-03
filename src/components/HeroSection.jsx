@@ -3,8 +3,11 @@ import { LinkedInIcon, MailIcon, GitHubIcon, DownArrowIcon } from "../Icons";
 
 const HeroSection = () => {
   return (
-    <section id="Home" className="min-h-screen text-center pt-[100px]">
-      <div className="container flex items-center justify-around mx-auto text-left">
+    <section
+      id="Home"
+      className="min-h-screen text-center pt-[50px] md:pt-[100px]"
+    >
+      <div className="container flex flex-col lg:flex-row items-center justify-around mx-auto text-left p-5">
         <div>
           <h1 className="text-6xl text-[#ccf381]">
             Frontend
@@ -53,7 +56,7 @@ const HeroSection = () => {
             Contact
           </button>
         </div>
-        <figure className="profile-bg">
+        <figure className="hidden md:block profile-bg">
           <p id="background-box"></p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +106,7 @@ const HeroSection = () => {
       </div>
       <a
         href="#About"
-        className="bg-white inline-block w-[50px] h-[50px] rounded-full relative"
+        className="hidden lg:inline-block bg-white w-[50px] h-[50px] rounded-full relative"
       >
         <DownArrowIcon />
       </a>
