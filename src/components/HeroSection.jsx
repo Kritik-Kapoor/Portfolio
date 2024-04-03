@@ -1,4 +1,4 @@
-import profile from "../assets/profile.jpg";
+import profile from "/assets/profile.jpg";
 import { LinkedInIcon, MailIcon, GitHubIcon, DownArrowIcon } from "../Icons";
 
 const HeroSection = () => {
