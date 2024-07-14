@@ -9,13 +9,9 @@ const Navbar = ({ isScrolled, scrollPos }) => {
 
   return (
     <nav
-      className={`navbar container-fluid ${
+      className={`navbar container-fluid bg-transparent text-white ${
         navDropdown ? "bg-black" : "bg-transparent"
-      } ${screenWidth < 768 ? "responsive" : "normal"} ${
-        isScrolled ? "bg-white text-black" : "bg-transparent text-white"
-      } ${
-        isScrolled || scrollPos === 0 ? "visible" : "hidden"
-      } transition-all duration-300 ease-in-out`}
+      } ${screenWidth < 768 ? "responsive" : "normal"}`}
     >
       {screenWidth < 768 ? (
         <>

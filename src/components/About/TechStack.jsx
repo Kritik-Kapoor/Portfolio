@@ -3,7 +3,9 @@ import {
   GitIcon,
   HtmlIcon,
   JsIcon,
+  MongoDBIcon,
   NextJsIcon,
+  NodeJsIcon,
   PhpIcon,
   ReactIcon,
   ReduxIcon,
@@ -20,6 +22,7 @@ const TechStack = () => {
         <div className="flex items-center justify-around flex-wrap gap-3 md:px-10">
           <SingleTech icon={<ReactIcon />} title="React" />
           <SingleTech icon={<ReduxIcon />} title="Redux" />
+          <SingleTech icon={<TypeScriptIcon />} title="TypeScript" />
           <SingleTech icon={<JsIcon />} title="JavaScript" />
           <SingleTech icon={<TailwindIcon />} title="Tailwind" />
           <SingleTech icon={<BootstrapIcon />} title="Bootstrap" />
@@ -29,10 +32,11 @@ const TechStack = () => {
         </div>
       </div>
       <div className="col-span-4 lg:col-span-1">
-        <h3 className="text-center text-2xl font-medium my-8">UPCOMING</h3>
+        <h3 className="text-center text-2xl font-medium my-8">LEARNING</h3>
         <div className="flex items-center justify-around px-10">
-          <SingleTech icon={<TypeScriptIcon />} title="TypeScript" />
           <SingleTech icon={<NextJsIcon />} title="NextJs" />
+          <SingleTech icon={<NodeJsIcon />} title="NodeJs" />
+          <SingleTech icon={<MongoDBIcon />} title="MongoDB" />
         </div>
       </div>
     </div>

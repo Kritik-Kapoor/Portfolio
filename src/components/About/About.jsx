@@ -9,12 +9,12 @@ const About = () => {
     >
       <WorkComponent
         title="Experience"
-        text="In my 1 year of experience, I've built products for companies and
+        text={`In my 1.5 years of experience, I've built products for companies and
           businesses around the globe ranging from marketing websites to complex
           solutions and enterprise apps with focus on fast, elegant and
           accessible user experiences. Currently, I work at Skilldukan as a
           Frontend Developer. There, I'm contributing to the development of
-          their exciting new investment platform, PitchHere."
+          their exciting new investment platform, PitchHere.`}
       />
       <WorkComponent
         title="Design"
