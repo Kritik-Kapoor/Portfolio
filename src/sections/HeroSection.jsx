@@ -1,12 +1,13 @@
-import profile from "/assets/profile.jpg";
+import { useState } from "react";
+import ContactModal from "../components/modal/ContactModal";
 import { LinkedInIcon, MailIcon, GitHubIcon, DownArrowIcon } from "../Icons";
+import profile from "/assets/profile.jpg";
 
 const HeroSection = () => {
+  const [openContactModal, setOpenContactModal] = useState(false);
+  // bg-[#030381] blue color
   return (
-    <section
-      id="Home"
-      className="min-h-screen text-center pt-[50px] md:pt-[100px]"
-    >
+    <section id="Home" className="min-h-screen text-center pt-10 md:pt-[100px]">
       <div className="container flex flex-col lg:flex-row items-center justify-around mx-auto text-left p-5">
         <div>
           <h1 className="text-6xl text-[#ccf381]">
@@ -17,7 +18,7 @@ const HeroSection = () => {
             I like to craft solid and scalable frontend products with great
             <br /> user experiences.
           </p>
-          <div className="flex items-center">
+          <div className="flex items-center gap-x-3">
             <a
               href="https://www.linkedin.com/in/kritik-kapoor/"
               target="_blank"
@@ -40,7 +41,7 @@ const HeroSection = () => {
               <MailIcon classes="mx-2" />
             </a>
           </div>
-          <p className="flex items-start justify-between mt-16 mb-8 text-[#add8e6]">
+          <p className="flex items-start justify-between mt-12 mb-8 text-[#add8e6]">
             <span>
               Highly skilled at progressive
               <br /> enhancement, design systems & UI
@@ -52,7 +53,10 @@ const HeroSection = () => {
               <br /> several countries.
             </span>
           </p>
-          <button className="px-3 py-1.5 bg-[#ccf381] rounded-md">
+          <button
+            className="px-3 py-1.5  bg-[#3f0d87] rounded-md font-medium"
+            onClick={() => setOpenContactModal(true)}
+          >
             Contact
           </button>
         </div>
@@ -110,6 +114,10 @@ const HeroSection = () => {
       >
         <DownArrowIcon />
       </a>
+      <ContactModal
+        open={openContactModal}
+        onClose={() => setOpenContactModal(false)}
+      />
     </section>
   );
 };

@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { BarsIcon } from "../Icons";
 import useScreenWidth from "../hooks/useScreenWidth";
+import ContactModal from "./modal/ContactModal";
 
 const Navbar = ({ isScrolled, scrollPos }) => {
   const screenWidth = useScreenWidth();
 
   const [navDropdown, setNavDropdown] = useState(false);
+  const [openContactModal, setOpenContactModal] = useState(false);
 
   return (
     <nav
@@ -15,28 +17,38 @@ const Navbar = ({ isScrolled, scrollPos }) => {
     >
       {screenWidth < 768 ? (
         <>
-          <BarsIcon
-            onClick={() => setNavDropdown(!navDropdown)}
-            classes={`ml-auto ${navDropdown ? "rotate-90" : ""}`}
-          />
+          <div className="flex items-center justify-between">
+            <h2 className="font-medium text-3xl text-[#ccf381]">
+              Kritik Kapoor
+            </h2>
+            <BarsIcon
+              onClick={() => setNavDropdown(!navDropdown)}
+              classes={`ml-auto ${navDropdown ? "rotate-90" : ""}`}
+            />
+          </div>
           <ul className={`${navDropdown ? "visible" : "hidden"}`}>
             <li>
-              <a href="#Home">Home</a>
-            </li>
-            <li>
-              <a href="#About">About</a>
-            </li>
-            <li>
-              <a href="#Projects">Projects</a>
-            </li>
-            <li>
-              <a
-                href="mailto:kritik0401@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Contact
+              <a href="#Home" onClick={() => setNavDropdown(false)}>
+                Home
               </a>
+            </li>
+            <li>
+              <a href="#About" onClick={() => setNavDropdown(false)}>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#Projects" onClick={() => setNavDropdown(false)}>
+                Projects
+              </a>
+            </li>
+            <li
+              onClick={() => {
+                setOpenContactModal(true);
+                setNavDropdown(false);
+              }}
+            >
+              Contact
             </li>
           </ul>
         </>
@@ -53,12 +65,21 @@ const Navbar = ({ isScrolled, scrollPos }) => {
             <a href="#Projects" className="hover:text-[#8258bf]">
               Projects
             </a>
-            <button className="px-3 py-1.5 bg-[#ccf381] rounded-md">
+            <button
+              className="px-3 py-1.5 bg-[#3f0d87] rounded-md"
+              onClick={() => {
+                setOpenContactModal(true);
+              }}
+            >
               Contact
             </button>
           </div>
         </>
       )}
+      <ContactModal
+        open={openContactModal}
+        onClose={() => setOpenContactModal(false)}
+      />
     </nav>
   );
 };

@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import About from "./components/About/About";
-import HeroSection from "./components/HeroSection";
+import About from "./sections/About/About";
+import HeroSection from "./sections/HeroSection";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Project/Projects";
+import Projects from "./sections/Project/Projects";
+// import Contact from "./sections/Contact";
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,6 +41,7 @@ function App() {
       <HeroSection />
       <About />
       <Projects />
+      {/* <Contact /> */}
     </>
   );
 }

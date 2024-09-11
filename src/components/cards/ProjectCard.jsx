@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SendIcon } from "../../Icons";
-import Modal from "../modal/Modal";
+import ProjectModal from "../modal/ProjectModal";
 
 const ProjectCard = ({ data }) => {
   const { img, title, description, languages, url } = data;
@@ -27,18 +27,22 @@ const ProjectCard = ({ data }) => {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-[#ccf381] px-2 py-1.5 rounded-md flex items-center"
+          className="bg-black px-2 py-1.5 rounded-md flex items-center"
         >
           Visit <SendIcon />
         </a>
         <button
-          className="bg-[#004c64] px-2 py-1.5 rounded-md"
+          className="bg-[#3f0d87] px-2 py-1.5 rounded-md"
           onClick={() => setOpenModal(true)}
         >
           Read More
         </button>
       </div>
-      <Modal open={openModal} onClose={() => setOpenModal(false)} data={data} />
+      <ProjectModal
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+        data={data}
+      />
     </div>
   );
 };

@@ -303,7 +303,7 @@ export const GitHubIcon = () => {
       viewBox="0 0 128 128"
       width="26px"
       height="26px"
-      className="mr-3 cursor-pointer"
+      className="cursor-pointer"
     >
       <g fill="#fff">
         <path
@@ -323,7 +323,7 @@ export const LinkedInIcon = () => {
       viewBox="0 0 128 128"
       width="26px"
       height="26px"
-      className="mr-3 cursor-pointer"
+      className="cursor-pointer"
     >
       <path
         fill="#0076b2"
@@ -345,7 +345,7 @@ export const MailIcon = () => {
       y="0px"
       width="26px"
       height="26px"
-      className="mr-3 cursor-pointer"
+      className="cursor-pointer"
       viewBox="0 0 48 48"
     >
       <path
@@ -435,6 +435,36 @@ export const BarsIcon = (props) => {
       {...props}
     >
       <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+    </svg>
+  );
+};
+
+export const CopyClipBoardIcon = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 512 512"
+      width="24px"
+      fill="#fff"
+      className="cursor-pointer rotate-90"
+      {...props}
+    >
+      <path d="M64 464l224 0c8.8 0 16-7.2 16-16l0-64 48 0 0 64c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 224c0-35.3 28.7-64 64-64l64 0 0 48-64 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zM224 304l224 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16L224 48c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zm-64-16l0-224c0-35.3 28.7-64 64-64L448 0c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64l-224 0c-35.3 0-64-28.7-64-64z" />
+    </svg>
+  );
+};
+
+export const TickIcon = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+      width="20px"
+      fill="#CCF381"
+      className="cursor-pointer"
+      {...props}
+    >
+      <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
     </svg>
   );
 };

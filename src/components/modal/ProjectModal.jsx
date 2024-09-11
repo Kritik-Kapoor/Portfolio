@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./modal.css";
 
-const Modal = ({ open, onClose, data }) => {
+const ProjectModal = ({ open, onClose, data }) => {
   const [selectedImg, setSelectedImg] = useState(1);
 
   if (!open) {
@@ -25,7 +25,7 @@ const Modal = ({ open, onClose, data }) => {
             href={data.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#ccf381] px-2 py-1.5 rounded-md flex items-center"
+            className="bg-[#3f0d87] px-2 py-1.5 rounded-md flex items-center"
           >
             Visit
           </a>
@@ -78,4 +78,4 @@ const Modal = ({ open, onClose, data }) => {
   );
 };
 
-export default Modal;
+export default ProjectModal;
