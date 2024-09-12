@@ -30,6 +30,7 @@ const ContactModal = ({ open, onClose }) => {
         className="modal-container w-10/12 sm:w-8/12 md:w-4/12 h-auto"
         onClick={(e) => e.stopPropagation()}
       >
+        <h4 className="text-left text-2xl font-semibold mb-5">Contact Links</h4>
         <div className="flex items-center justify-between mb-3 p-2 bg-[#000020] rounded-md">
           <div className="flex items-center gap-x-3">
             <LinkedInIcon />
