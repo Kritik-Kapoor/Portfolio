@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { BarsIcon } from "../Icons";
 import useScreenWidth from "../hooks/useScreenWidth";
+import { useToggleContactModal } from "../context/ContactModalContext";
 import ContactModal from "./modal/ContactModal";
 
-const Navbar = ({ isScrolled, scrollPos }) => {
+const Navbar = () => {
   const screenWidth = useScreenWidth();
 
   const [navDropdown, setNavDropdown] = useState(false);
-  const [openContactModal, setOpenContactModal] = useState(false);
+  const { openContactModal, setOpenContactModal } = useToggleContactModal();
 
   return (
     <nav

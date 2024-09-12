@@ -1,4 +1,5 @@
-import "./modal.css";
+import { useState } from "react";
+import { CopyToClipboard } from "../../utils/CopyToClipboard";
 import {
   CopyClipBoardIcon,
   GitHubIcon,
@@ -6,8 +7,7 @@ import {
   MailIcon,
   TickIcon,
 } from "../../Icons";
-import { CopyToClipboard } from "../../utils/CopyToClipboard";
-import { useState } from "react";
+import "./modal.css";
 
 const ContactModal = ({ open, onClose }) => {
   const [copiedValue, setCopiedValue] = useState("");

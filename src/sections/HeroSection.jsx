@@ -1,11 +1,11 @@
-import { useState } from "react";
 import ContactModal from "../components/modal/ContactModal";
 import { LinkedInIcon, MailIcon, GitHubIcon, DownArrowIcon } from "../Icons";
 import profile from "/assets/profile.jpg";
+import { useToggleContactModal } from "../context/ContactModalContext";
 
 const HeroSection = () => {
-  const [openContactModal, setOpenContactModal] = useState(false);
-  // bg-[#030381] blue color
+  const { openContactModal, setOpenContactModal } = useToggleContactModal();
+
   return (
     <section id="Home" className="min-h-screen text-center pt-10 md:pt-[100px]">
       <div className="container flex flex-col lg:flex-row items-center justify-around mx-auto text-left p-5">
