@@ -9,10 +9,10 @@ const HeroSection = () => {
   return (
     <section
       id="Home"
-      className="min-h-[85vh] md:min-h-screen text-center pt-10 md:pt-0"
+      className="min-h-[85vh] md:min-h-fit lg:min-h-screen mb-16 text-center pt-10 lg:pt-0"
     >
-      <div className="container flex flex-col lg:flex-row items-center justify-around mx-auto text-left p-5">
-        <div>
+      <div className="container flex items-center justify-around mx-auto text-left p-5">
+        <div className="md:w-5/6 lg:w-auto">
           <h1 className="text-6xl text-[#ccf381]">
             Frontend
             <br /> Developer<span className="text-white">.</span>
@@ -63,7 +63,7 @@ const HeroSection = () => {
             Contact
           </button>
         </div>
-        <figure className="hidden md:block profile-bg">
+        <figure className="hidden lg:block profile-bg">
           <p id="background-box"></p>
           <svg
             xmlns="http://www.w3.org/2000/svg"

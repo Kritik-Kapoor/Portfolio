@@ -24,12 +24,11 @@ body {
   transform: translate(-50%, -50%);
 }
 .navbar.normal {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  margin: auto;
   border-radius: 0 0 10px 10px;
 }
 .navbar.responsive {
@@ -50,4 +49,11 @@ body {
 .navbar.responsive ul li {
   margin: 16px 0;
   font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1440px) {
+  .navbar.normal {
+    width: 90%;
+    margin: auto;
+  }
 }

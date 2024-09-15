@@ -19,7 +19,7 @@ const TechStack = () => {
     <div className="py-10 grid grid-cols-4">
       <div className="col-span-4 lg:col-span-3">
         <h3 className="text-center text-2xl font-medium my-8">TECHSTACK</h3>
-        <div className="flex items-center justify-around flex-wrap gap-3 md:px-10">
+        <div className="flex items-center justify-around md:justify-center flex-wrap gap-3 md:gap-5 md:px-10">
           <SingleTech icon={<ReactIcon />} title="React" />
           <SingleTech icon={<ReduxIcon />} title="Redux" />
           <SingleTech icon={<TypeScriptIcon />} title="TypeScript" />
@@ -33,7 +33,7 @@ const TechStack = () => {
       </div>
       <div className="col-span-4 lg:col-span-1">
         <h3 className="text-center text-2xl font-medium my-8">LEARNING</h3>
-        <div className="flex items-center justify-around px-10">
+        <div className="flex items-center justify-around md:justify-center gap-3 md:gap-5 px-10">
           <SingleTech icon={<NextJsIcon />} title="NextJs" />
           <SingleTech icon={<NodeJsIcon />} title="NodeJs" />
           <SingleTech icon={<MongoDBIcon />} title="MongoDB" />

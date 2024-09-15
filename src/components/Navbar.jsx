@@ -56,7 +56,7 @@ const Navbar = () => {
       ) : (
         <>
           <h2 className="font-medium text-3xl text-[#ccf381]">Kritik Kapoor</h2>
-          <div className="w-6/12 xl:w-4/12 flex items-center justify-between text-lg font-medium">
+          <div className="w-6/12 xl:w-4/12 flex items-center justify-between text-base xl:text-lg font-medium">
             <a href="#Home" className="hover:text-[#8258bf]">
               Home
             </a>

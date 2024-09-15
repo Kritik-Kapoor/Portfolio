@@ -4,7 +4,7 @@ import TechStack from "./TechStack";
 const About = () => {
   return (
     <section
-      className="container mx-auto grid gap-8 min-h-[90vh] px-4 pt-10 pb-16"
+      className="container mx-auto grid gap-8 min-h-[90vh] px-4 md:px-6 xl:px-4 pt-10 pb-16"
       id="About"
     >
       <WorkComponent
