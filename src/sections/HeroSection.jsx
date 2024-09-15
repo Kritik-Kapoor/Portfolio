@@ -7,7 +7,10 @@ const HeroSection = () => {
   const { openContactModal, setOpenContactModal } = useToggleContactModal();
 
   return (
-    <section id="Home" className="min-h-screen text-center pt-10 md:pt-[100px]">
+    <section
+      id="Home"
+      className="min-h-[70vh] md:min-h-screen text-center pt-10 md:pt-[100px]"
+    >
       <div className="container flex flex-col lg:flex-row items-center justify-around mx-auto text-left p-5">
         <div>
           <h1 className="text-6xl text-[#ccf381]">
