@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./modal.css";
+import { SendIcon } from "../../Icons";
 
 const ProjectModal = ({ open, onClose, data }) => {
   const [selectedImg, setSelectedImg] = useState(1);
@@ -7,7 +8,6 @@ const ProjectModal = ({ open, onClose, data }) => {
   if (!open) {
     return null;
   }
-
   return (
     <div
       className={`overlay ${open ? "visible" : "invisible"}`}
@@ -25,9 +25,9 @@ const ProjectModal = ({ open, onClose, data }) => {
             href={data.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#3f0d87] px-2 py-1.5 rounded-md flex items-center"
+            className="bg-black px-2 py-1.5 rounded-md flex items-center font-medium"
           >
-            Visit
+            Visit <SendIcon />
           </a>
         </div>
         <div>
