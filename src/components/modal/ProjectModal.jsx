@@ -25,7 +25,7 @@ const ProjectModal = ({ open, onClose, data }) => {
             href={data.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-black px-2 py-1.5 rounded-md flex items-center font-medium"
+            className="bg-[#3F0D87] px-2 py-1.5 rounded-md flex items-center font-medium"
           >
             Visit <SendIcon />
           </a>
