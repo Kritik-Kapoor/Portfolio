@@ -31,7 +31,7 @@
     {
       "title": "userq.net",
       "description": "This E-commerce platform specializes in the sale of Snapchat and Instagram accounts. Originally developed for an international client, the website boasts a comprehensive admin portal. Through this portal, administrators have full control over categories, products, and discounts, ensuring a seamless and tailored shopping experience for customers.",
-      "languages": ["Php", "JavaScript", "SQL", "jQuery", "HTML", "Bootstrap5"],
+      "languages": ["Php", "JavaScript", "SQL", "jQuery", "Bootstrap5"],
       "img": [
         { "id": 1, "image": "/assets/userq.png" },
         { "id": 2, "image": "/assets/userq2.png" },

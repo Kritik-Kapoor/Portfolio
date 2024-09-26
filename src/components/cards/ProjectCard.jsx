@@ -15,14 +15,14 @@ const ProjectCard = ({ data }) => {
       />
       <h4 className="font-medium text-2xl mt-2">{title}</h4>
       <p className="leading-6 my-3">{description.slice(0, 200)}...</p>
-      <p className="flex items-center flex-wrap gap-1">
+      <p className="flex items-center flex-wrap gap-1 pb-10 xl:pb-12">
         {languages?.map((tech, i) => (
           <span key={i} className="bg-[#000020] px-1.5 py-1 rounded">
             {tech}
           </span>
         ))}
       </p>
-      <div className="flex items-center justify-between mt-7">
+      <div className="absolute bottom-1.5 lg:bottom-2 left-1/2 -translate-x-2/4 w-11/12 flex items-center justify-between">
         <a
           href={url}
           target="_blank"
