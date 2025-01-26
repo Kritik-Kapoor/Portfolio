@@ -17,7 +17,7 @@
         { "id": 3, "image": "/assets/PitchHere3.png" },
         { "id": 4, "image": "/assets/PitchHere4.png" }
       ],
-      "url": "https://pitchhere.in/",
+      "url": "https://pitchhere.ai/",
       "features": [
         "Startup Investment platform developed using MERN stack, Redux, and Tailwind.",
         "Implemented a real-time chat functionality using socket.io, resulting in a 30% increase in customer engagement.",
