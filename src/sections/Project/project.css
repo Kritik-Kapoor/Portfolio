@@ -3,4 +3,11 @@
   padding: 1rem;
   background-color: #101539;
   border-radius: 0.375rem;
+  transition: box-shadow 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .project-card:hover {
+    box-shadow: 0 4px 12px rgba(63, 13, 135, 0.5); /* #3F0D87 with opacity */
+  }
 }

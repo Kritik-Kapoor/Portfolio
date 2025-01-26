@@ -3,7 +3,7 @@ import { SendIcon } from "../../Icons";
 import ProjectModal from "../modal/ProjectModal";
 
 const ProjectCard = ({ data }) => {
-  const { img, title, description, languages, url } = data;
+  const { img, title, description, languages, url, readMore } = data;
 
   const [openModal, setOpenModal] = useState(false);
   return (
@@ -14,7 +14,9 @@ const ProjectCard = ({ data }) => {
         className="h-[250px] rounded"
       />
       <h4 className="font-medium text-2xl mt-2">{title}</h4>
-      <p className="leading-6 my-3">{description.slice(0, 200)}...</p>
+      <p className="leading-6 my-3">
+        {readMore ? description.slice(0, 200) + "..." : description}
+      </p>
       <p className="flex items-center flex-wrap gap-1 pb-10 xl:pb-12">
         {languages?.map((tech, i) => (
           <span key={i} className="bg-[#000020] px-1.5 py-1 rounded">
@@ -31,12 +33,14 @@ const ProjectCard = ({ data }) => {
         >
           Visit <SendIcon />
         </a>
-        <button
-          className="bg-[#3f0d87] px-2 py-1.5 rounded-md"
-          onClick={() => setOpenModal(true)}
-        >
-          Read More
-        </button>
+        {readMore && (
+          <button
+            className="bg-[#3f0d87] px-2 py-1.5 rounded-md"
+            onClick={() => setOpenModal(true)}
+          >
+            Read More
+          </button>
+        )}
       </div>
       <ProjectModal
         open={openModal}

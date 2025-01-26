@@ -9,12 +9,7 @@ const About = () => {
     >
       <WorkComponent
         title="Experience"
-        text={`In my 1.6 years of experience, I've built products for companies and
-          businesses around the globe ranging from marketing websites to complex
-          solutions and enterprise apps with focus on fast, elegant and
-          accessible user experiences. Currently, I work at Skilldukan as a
-          Frontend Developer. There, I'm contributing to the development of
-          their exciting new investment platform, PitchHere.`}
+        text={`With 2+ years of experience, I’ve built products across industries, from enterprise applications to marketing platforms. Currently, I’m working as a SDE at Pagerly, where I’m developing a system for managing Oncall/Incident/Ticket workflows through Slack and similar apps. Previously, I led the frontend development of the PitchHere investment platform at Skilldukan, focusing on performance optimization and user experience`}
       />
       <WorkComponent
         title="Design"

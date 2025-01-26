@@ -4,7 +4,7 @@
       "title": "PitchHere",
       "description": "PitchHere is an investment platform that provides a one-stop for all startup needs. PitchHere provides a comprehensive suite of services for startups, including access to investors, mentorship programs, and various support services to help them thrive. With PitchHere, startups have a strong foundation to launch, scale, and become the next big success story.",
       "languages": [
-        "React",
+        "ReactJS",
         "Redux",
         "NodeJs",
         "MongoDB",
@@ -26,7 +26,8 @@
         "Implemented Redux and Redux-persist to store data in a state and local storage respectively.",
         "Created a complete wallet system with Razorpay as a payment gateway.",
         "Launched a dynamic user marketplace with bidding functionality! Here, project owners can post details and budget for tasks, while skilled service providers compete for them by submitting bids. This fosters a competitive environment that drives quality and potentially lowers costs."
-      ]
+      ],
+      "readMore": true
     },
     {
       "title": "userq.net",
@@ -44,20 +45,16 @@
         "Integrated Twilo for sending sms.",
         "Complete admin panel with ability to control categories, products and discount.",
         "Responsive UI."
-      ]
+      ],
+      "readMore": true
     },
     {
-      "title": "EcoExcellence",
-      "description": "EcoExcellence is an online platform dedicated to promoting sustainable living and eco-friendly products in Australia. Designed to cater to the needs of environmentally conscious consumers, EcoExcellence offers a wide range of products that are sourced and manufactured with sustainability in mind From houseehold items to personal care products, each item on EcoExcellence is carefully curated to meet the highest standards of eco-friendliness. The platform also features a user-friendly interface, making it easy for customers to find and purchase products that align with their values.",
-      "languages": ["Php", "HTML", "Bootstrap5"],
-      "img": [
-        { "id": 1, "image": "/assets/EcoExcellence.png" },
-        { "id": 2, "image": "/assets/EcoExcellence2.png" },
-        { "id": 3, "image": "/assets/EcoExcellence3.png" },
-        { "id": 4, "image": "/assets/EcoExcellence4.png" }
-      ],
-      "url": "https://ecoexcellence.com.au/",
-      "features": ["Seamless Responsive UI.", "Contact Form"]
+      "title": "Open Source Contribution",
+      "description": "Refactored Innovaccer's UI library by replacing the deprecated Dropdown component with the Select component, ensuring seamless integration and improved performance. Solving issue #2382",
+      "languages": ["ReactJS", "JavaScript", "Bootstrap5"],
+      "img": [{ "id": 1, "image": "/assets/GitHub-logo-large.jpg" }],
+      "url": "https://github.com/innovaccer/design-system/pull/2408",
+      "readMore": false
     }
   ]
 }

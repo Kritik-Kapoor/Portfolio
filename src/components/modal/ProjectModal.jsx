@@ -67,7 +67,7 @@ const ProjectModal = ({ open, onClose, data }) => {
           <div>
             <p className="font-medium underline underline-offset-4">FEATURES</p>
             <ul className="list-disc ml-5">
-              {data.features.map((feature, i) => (
+              {data?.features?.map((feature, i) => (
                 <li key={i}>{feature}</li>
               ))}
             </ul>
