@@ -34,7 +34,7 @@ const ProjectModal = ({ open, onClose, data }) => {
           <img
             src={data.img[selectedImg - 1].image}
             alt="highligted image"
-            width="92%"
+            width="94%"
             className="rounded mx-auto md:m-0"
           />
           <div className="flex items-center justify-center md:justify-start gap-2 my-2">

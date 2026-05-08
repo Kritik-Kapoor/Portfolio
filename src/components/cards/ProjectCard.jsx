@@ -4,6 +4,7 @@ import ProjectModal from "../modal/ProjectModal";
 
 const ProjectCard = ({ data }) => {
   const { img, title, description, languages, url, readMore } = data;
+  console.log(img);
 
   const [openModal, setOpenModal] = useState(false);
   return (
@@ -15,16 +16,20 @@ const ProjectCard = ({ data }) => {
       />
       <h4 className="font-medium text-2xl mt-2">{title}</h4>
       <p className="leading-6 my-3">
-        {readMore ? description.slice(0, 185) + "..." : description}
+        {readMore
+          ? description.length > 185
+            ? description.slice(0, 185) + "..."
+            : description
+          : description}
       </p>
-      <p className="flex flex-1 items-start flex-wrap gap-1 pb-10 xl:pb-12">
+      <p className="flex items-start flex-wrap gap-1 pb-10 xl:pb-12">
         {languages?.map((tech, i) => (
           <span key={i} className="bg-[#000020] px-1.5 py-1 rounded">
             {tech}
           </span>
         ))}
       </p>
-      <div className="flex items-center justify-between">
+      <div className="flex mt-auto items-center justify-between">
         <a
           href={url}
           target="_blank"

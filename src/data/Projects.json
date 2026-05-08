@@ -1,6 +1,88 @@
 {
   "projects": [
     {
+      "title": "Pagerly",
+      "description": "Manage Oncalls, Rotations, Incidents and Tasks on Slack/Teams with Ease",
+      "languages": [
+        "ReactJS",
+        "Typescript",
+        "Tanstack Query",
+        "Tailwind",
+        "Shadcn/UI"
+      ],
+      "url": "https://www.pagerly.io/",
+      "img": [
+        { "id": 1, "image": "/assets/pagerly1.png" },
+        { "id": 2, "image": "/assets/pagerly2.png" },
+        { "id": 3, "image": "/assets/pagerly3.png" },
+        { "id": 4, "image": "/assets/pagerly4.png" }
+      ],
+      "features": [
+        "Connect third party integrations like pagerduty, opsgenie, Jira, etc. to your Pagerly account.",
+        "Create and manage oncalls and rotations by creating a team based on oncall schedule, tasks or sync schedule from third party integration.",
+        "Ability to group multiple oncall teams together.",
+        "Built a calendar UI to view oncalls and rotations.",
+        "Raise rotation cover request, override oncall and swap rotation.",
+        "Create and manage incidents, escalation layers and tasks."
+      ],
+      "readMore": true
+    },
+    {
+      "title": "Syncmygroup",
+      "description": "Automatically sync groups, teams and users  between different tools like  Google, Slack, Github, Jira, Hubspot, HR Tools etc",
+      "languages": [
+        "ReactJS",
+        "Typescript",
+        "Tanstack Query",
+        "Tailwind",
+        "Shadcn/UI"
+      ],
+      "url": "https://www.syncmygroup.com/",
+      "img": [
+        { "id": 1, "image": "/assets/syncmygroup1.png" },
+        { "id": 2, "image": "/assets/syncmygroup2.png" },
+        { "id": 3, "image": "/assets/syncmygroup3.png" },
+        { "id": 4, "image": "/assets/syncmygroup4.png" }
+      ],
+      "features": [
+        "Connect third party integrations like pagerduty, opsgenie, Jira, etc. to your Pagerly account.",
+        "Create your own team workflows between different workspaces.",
+        "Replicate data from one workspace into multiple workspaces.",
+        "Manage individual user status across different workspaces.",
+        "Connect with github to manage users",
+        "Generate reports for your teams to get users status across different workspaces."
+      ],
+      "readMore": true
+    },
+    {
+      "title": "Status Pages",
+      "description": "Maintain strong customer relationships during downtime with pretty Status Pages Our Status Pages—available in both public and private formats—provide an easy and effective way to keep customers informed during incidents. Host it on custom domain!",
+      "languages": [
+        "ReactJS",
+        "Typescript",
+        "Tanstack Query",
+        "Tailwind",
+        "Shadcn/UI"
+      ],
+      "url": "https://www.pagerly.io/workflow/beautiful-status-pages",
+      "img": [
+        { "id": 1, "image": "/assets/statuspage1.png" },
+        { "id": 2, "image": "/assets/statuspage2.png" },
+        { "id": 3, "image": "/assets/statuspage3.png" },
+        { "id": 4, "image": "/assets/statuspage4.png" }
+      ],
+      "features": [
+        "Their are 3 different types of status pages available: Third party monitor, Status page and Uptime monitor.",
+        "Monitor and track status of services that your org uses.",
+        "Host your status pages on a custom domain.",
+        "Public and private status pages available.",
+        "Raise notices for incidents and schedule maintenances updates.",
+        "Monitor and track your website or api's status using uptime monitor.",
+        "Analytics and reporting."
+      ],
+      "readMore": true
+    },
+    {
       "title": "PitchHere",
       "description": "PitchHere is an investment platform that provides a one-stop for all startup needs. PitchHere provides a comprehensive suite of services for startups, including access to investors, mentorship programs, and various support services to help them thrive. With PitchHere, startups have a strong foundation to launch, scale, and become the next big success story.",
       "languages": [

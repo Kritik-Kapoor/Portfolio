@@ -11,8 +11,8 @@ const HeroSection = () => {
       id="Home"
       className="min-h-[85vh] md:min-h-fit xl:min-h-screen md:mb-16 text-center pt-10 lg:pt-0"
     >
-      <div className="container flex items-center justify-around mx-auto text-left p-4 lg:p-7">
-        <div className="md:w-5/6 lg:w-auto">
+      <div className="container flex items-center justify-between mx-auto text-left p-4 lg:py-7 lg:px-4">
+        <div className="w-full lg:w-auto">
           <h1 className="text-6xl text-[#ccf381]">
             Frontend
             <br /> Developer<span className="text-white">.</span>
@@ -44,7 +44,7 @@ const HeroSection = () => {
               <MailIcon classes="mx-2" />
             </a>
           </div>
-          <p className="flex items-start justify-between mt-12 mb-8 text-[#add8e6]">
+          <p className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-10 mt-12 mb-8 text-[#add8e6]">
             <span>
               Highly skilled at progressive
               <br /> enhancement, design systems & UI
