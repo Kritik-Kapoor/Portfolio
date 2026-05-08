@@ -14,7 +14,7 @@ const ProjectModal = ({ open, onClose, data }) => {
       onClick={onClose}
     >
       <div
-        className="modal-container grid lg:grid-cols-2"
+        className="modal-container grid lg:grid-cols-2 max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="lg:col-span-2 flex items-center justify-between mb-2">
