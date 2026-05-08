@@ -7,24 +7,24 @@ const ProjectCard = ({ data }) => {
 
   const [openModal, setOpenModal] = useState(false);
   return (
-    <div className="project-card">
+    <div className="project-card flex flex-col">
       <img
         src={img[0].image}
         alt={`${title} screenshot`}
-        className="h-[250px] rounded"
+        className="h-[250px] rounded mx-auto"
       />
       <h4 className="font-medium text-2xl mt-2">{title}</h4>
       <p className="leading-6 my-3">
-        {readMore ? description.slice(0, 200) + "..." : description}
+        {readMore ? description.slice(0, 185) + "..." : description}
       </p>
-      <p className="flex items-center flex-wrap gap-1 pb-10 xl:pb-12">
+      <p className="flex flex-1 items-start flex-wrap gap-1 pb-10 xl:pb-12">
         {languages?.map((tech, i) => (
           <span key={i} className="bg-[#000020] px-1.5 py-1 rounded">
             {tech}
           </span>
         ))}
       </p>
-      <div className="absolute bottom-1.5 lg:bottom-2 left-1/2 -translate-x-2/4 w-11/12 flex items-center justify-between">
+      <div className="flex items-center justify-between">
         <a
           href={url}
           target="_blank"
